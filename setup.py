@@ -48,6 +48,8 @@ class BuildLibraryCommand(build_ext):
             f"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY={extdir}",
             f"-DPYTHON_EXECUTABLE={sys.executable}",
             f"-DCMAKE_BUILD_TYPE={cfg}",
+            f"-DCMAKE_C_COMPILER=/opt/common/CentOS_7/gcc/gcc-10.2.0/bin/gcc",
+            f"-DCMAKE_CXX_COMPILER=/opt/common/CentOS_7/gcc/gcc-10.2.0/bin/g++",
         ]
 
         if "CMAKE_ARGS" in os.environ:
