@@ -15,7 +15,7 @@ class Surface(MolESPModel):
 
 
 class ESPMolecule(MolESPModel):
-
+    mapped_smiles: str
     atomic_numbers: List[int]
 
     conformer: List[float]
