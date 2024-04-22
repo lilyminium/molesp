@@ -8,7 +8,7 @@ from openff.units.openmm import from_openmm
 def unify(quantity):
     if not isinstance(quantity, unit.Quantity):
         return from_openmm(quantity)
-
+    return quantity
 
 class MolESPModel(BaseModel):
     class Config:
