@@ -8,7 +8,7 @@ export interface WebGLAppOptions {
 }
 
 export const DefaultWebGLAppOptions: WebGLAppOptions = {
-  backgroundColor: "#f5f5f5",
+  backgroundColor: "#ffffff",
   maxPixelRatio: 2,
 };
 
